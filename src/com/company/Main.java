@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
     Employee m = new Employee();
-    m.createList();
+    m.printOut();
     }
 }

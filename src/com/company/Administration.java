@@ -13,10 +13,15 @@ public class Administration extends Employee {
         return vacation;
     }
 
-    public Administration(String name,String cpr, int hours, int vacation, int salary) {
+    public Administration(String name,String cpr, int hours, int salary, int vacation) {
         super(name,cpr,hours,salary);
         hours = 37;
         salary = 24000;
         this.vacation = vacation;
+    }
+
+    @Override
+    public String toString() {
+        return name + "\t" + cpr + "\t" + getHours() + "\t" + getSalary() + "\t \t \t" + getVacation();
     }
 }
