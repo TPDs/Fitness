@@ -20,11 +20,20 @@ public class Main {
         memberList.add(new Member("Marcal","221175-1011",true));
 
 
+        // Lavede denne liste da jeg ikke kunne bruge .getName og cpr
+        List <Person> fullList = new ArrayList<>();
+        for (int i =0; i < workerList.size();i++) {
+        fullList.add(new Person(workerList.get(i).getName(),workerList.get(i).getCpr())); }
+        for (int j=0; j< memberList.size();j++) {
+            fullList.add(new Person(memberList.get(j).getName(),memberList.get(j).getCpr()));
+        }
+
+
     Member n = new Member();
     Employee m = new Employee();
     Person a = new Person();
     m.printOut(workerList);
     n.printOut(memberList);
-    a.printOut(workerList,memberList);
+    a.printOuts(fullList);
     }
 }
