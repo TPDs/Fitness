@@ -1,17 +1,24 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Employee extends Person {
 
     private int hours, salary;
 
-    public void printOut(List workerList){
+    public Employee() {
+    }
 
-        System.out.println("\nFITNESS EMPLOYEES \n \n" +
-                "Name \t Cpr \t Hours \t Salary \t Vacation");
-        for (int i =0; i < 45;){
+    public Employee(String name, String cpr, int hours, int salary) {
+        super(name, cpr);
+        this.hours = hours;
+        this.salary = salary;
+    }
+
+    public void printOut(List workerList) {
+
+        System.out.println("\nFITNESS EMPLOYEES \n \n" + "Name \t Cpr \t Hours \t Salary \t Vacation");
+        for (int i = 0; i < 45; ) {
             System.out.print("*");
             i++;
         }
@@ -20,22 +27,12 @@ public class Employee extends Person {
             System.out.println(s);
         }
 
-        for (int i =0; i < 45;){
+        for (int i = 0; i < 45; ) {
             System.out.print("=");
             i++;
         }
 
     }
-
-    public Employee() {
-    }
-
-    public Employee(String name, String cpr,int hours, int salary ) {
-        super(name,cpr);
-        this.hours= hours;
-        this.salary=salary;
-    }
-
 
     public int getHours() {
         return hours;

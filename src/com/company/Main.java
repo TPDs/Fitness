@@ -2,19 +2,25 @@ package com.company;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
+
+
+        IntOnlyArrayList cola = new IntOnlyArrayList();
+
+        //cola.size();
+        //cola.add(8);
+        //cola.add(9);
+        //cola.clear();
+        cola.remove(1);
 
         List<Person> workerList = new ArrayList<>();
-        workerList.add(new Administration("Claus", "221175-1011", 37, 24000, 5));
+        workerList.add(new Administration("Claus", "221175-1011", 37, 23000, 5));
         workerList.add(new Instructor("Tove", "011080-1014", 20, 456));
         workerList.add(new Administration("Anna", "01180-1014", 37, 23000, 5));
         workerList.add(new Instructor("Henning", "011080-1014", 15, 456));
@@ -25,9 +31,7 @@ public class Main {
         memberList.add(new Member("Martina", "051970-1409", false));
         memberList.add(new Member("Marcal", "221175-1011", true));
 
-
-        // Lavede denne liste da jeg ikke kunne bruge .getName og cpr
-        List<Person> fullList = new ArrayList<>();
+         List<Person> fullList = new ArrayList<>();
         for (int i = 0; i < workerList.size(); i++) {
             fullList.add(new Person(workerList.get(i).getName(), workerList.get(i).getCpr()));
         }
@@ -45,7 +49,7 @@ public class Main {
             e.printStackTrace();
 
         }
-
+/*
         Member n = new Member();
         Employee m = new Employee();
         Person a = new Person();
@@ -53,5 +57,12 @@ public class Main {
         n.printOut(memberList);
         a.printOuts(fullList);
         a.printOuts(fullListFraRead);
+
+        */
+
+
+
+
+
     }
 }
