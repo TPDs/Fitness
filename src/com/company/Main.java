@@ -17,7 +17,7 @@ public class Main {
         //cola.add(8);
         //cola.add(9);
         //cola.clear();
-        cola.remove(1);
+        cola.remove(12);
 
         List<Person> workerList = new ArrayList<>();
         workerList.add(new Administration("Claus", "221175-1011", 37, 23000, 5));

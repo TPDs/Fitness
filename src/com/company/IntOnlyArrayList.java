@@ -10,13 +10,15 @@ public class IntOnlyArrayList {
         int[] nyintList = new int[count-1];
 
         for (int i = 0; i < count;i++) {
-            if (intlist[i] == tal) {
-            i++;
+            if (intlist[count-i] == tal) {
+
             }
-            else nyintList[i] = intlist[i];
+            else nyintList[count-i] = intlist[count-i];
         }
+
         intlist=nyintList;
         System.out.println(intlist.length);
+
 
     }
 
